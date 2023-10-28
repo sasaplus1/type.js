@@ -4,7 +4,7 @@ import { instanceOf } from './index';
 
 const { isMap, isSet } = instanceOf;
 
-describe('', function() {
+describe('type', function() {
   context('isMap', function() {
     it('return true if value is a Map', function() {
       assert.ok(isMap(new Map()));
