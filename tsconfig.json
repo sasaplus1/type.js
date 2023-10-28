@@ -1,0 +1,11 @@
+{
+  "extends": "@tsconfig/strictest",
+  "compilerOptions": {
+    "lib": [
+      "DOM"
+    ]
+  },
+  "files": [
+    "./index.ts"
+  ]
+}
