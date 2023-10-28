@@ -49,4 +49,5 @@ jobs:
           cache: npm
           node-version: lts/*
       - run: npm ci
+      - run: npx playwright install ${{ matrix.browser }}
       - run: npx web-test-runner --playwright --browsers ${{ matrix.browser }}
