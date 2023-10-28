@@ -16,7 +16,10 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "pretest": "npm run build",
-    "test": "mocha --require tsx index.test.ts"
+    "pretest:browser": "npx playwright install chromium",
+    "pretest:unit": "npm run build",
+    "test": "npm run test:unit && npm run test:browser",
+    "test:browser": "web-test-runner --playwright --browsers chromium",
+    "test:unit": "mocha --require tsx index.test.ts"
   }
 }
