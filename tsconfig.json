@@ -3,7 +3,9 @@
   "compilerOptions": {
     "lib": [
       "DOM"
-    ]
+    ],
+    "module": "ESNext",
+    "target": "ESNext"
   },
   "files": [
     "./index.ts"
