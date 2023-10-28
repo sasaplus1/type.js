@@ -27,7 +27,7 @@ jobs:
           cache: npm
           node-version: ${{ matrix.node }}
       - run: npm ci
-      - run: npm test:unit
+      - run: npm run test:unit
   browser:
     if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ${{ matrix.os }}
