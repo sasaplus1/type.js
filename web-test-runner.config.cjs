@@ -4,9 +4,9 @@ const { esbuildPlugin } = require('@web/dev-server-esbuild');
 /** @type {import('@web/test-runner').TestRunnerConfig} */
 const config = {
   coverageConfig: {
-    include: ['packages/**/*.ts']
+    include: ['**/*.ts']
   },
-  files: ['packages/**/*.test.ts'],
+  files: ['**/*.test.ts'],
   nodeResolve: true,
   plugins: [
     esbuildPlugin({
