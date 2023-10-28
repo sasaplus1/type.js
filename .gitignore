@@ -132,4 +132,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+### sasaplus1/type.js
 
+/index.js
